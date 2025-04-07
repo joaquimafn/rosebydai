@@ -1,37 +1,37 @@
-# RosebydAI - Mentor Virtual Inteligente
+# RosebydAI - Intelligent Virtual Mentor
 
-Um aplicativo React Native com Expo que implementa um mentor virtual inteligente, utilizando Expo Router para navegação e integrações com OpenAI para respostas personalizadas.
+A React Native app with Expo that implements an intelligent virtual mentor, using Expo Router for navigation and OpenAI integrations for personalized responses.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
-- **React Native** com **Expo**
-- **TypeScript** para tipagem estática
-- **Expo Router** para navegação avançada com deep linking
-- **Zustand** para gerenciamento de estado otimizado
-- **React Native Reanimated** para animações suaves
-- **React Native Async Storage** para persistência local
-- **React Native Paper** para UI acessível e moderna
-- **Firebase** (Auth e Firestore) para autenticação e armazenamento
-- **OpenAI** para respostas dinâmicas e personalizadas
-- **Expo Notifications** para notificações push
+- **React Native** with **Expo**
+- **TypeScript** for static typing
+- **Expo Router** for advanced navigation with deep linking
+- **Zustand** for optimized state management
+- **React Native Reanimated** for smooth animations
+- **React Native Async Storage** for local persistence
+- **React Native Paper** for accessible and modern UI
+- **Firebase** (Auth and Firestore) for authentication and storage
+- **OpenAI** for dynamic and personalized responses
+- **Expo Notifications** for push notifications
 
-## Estrutura do Projeto
+## Project Structure
 
 ```
 RosebydAI/
-├── app/                    # Rotas do Expo Router
-│   ├── _layout.tsx         # Layout raiz
-│   ├── index.tsx           # Página inicial
-│   ├── auth/               # Rotas de autenticação
+├── app/                    # Expo Router routes
+│   ├── _layout.tsx         # Root layout
+│   ├── index.tsx           # Home page
+│   ├── auth/               # Authentication routes
 │   │   ├── login.tsx
 │   │   └── signup.tsx
-│   ├── chat/               # Rotas de chat
+│   ├── chat/               # Chat routes
 │   │   ├── _layout.tsx
 │   │   ├── index.tsx
 │   │   └── conversation.tsx
-│   └── profile.tsx         # Página de perfil
+│   └── profile.tsx         # Profile page
 ├── src/
-│   ├── components/         # Componentes reutilizáveis
+│   ├── components/         # Reusable components
 │   │   ├── Button.tsx
 │   │   ├── Screen.tsx
 │   │   ├── TextInput.tsx
@@ -40,44 +40,44 @@ RosebydAI/
 │   │       ├── ChatInput.tsx
 │   │       ├── ChatMessages.tsx
 │   │       └── ChatScreen.tsx
-│   ├── hooks/              # Hooks personalizados
+│   ├── hooks/              # Custom hooks
 │   │   └── useTheme.ts
-│   ├── services/           # Serviços externos
+│   ├── services/           # External services
 │   │   ├── firebase.ts
 │   │   └── openai.ts
-│   ├── store/              # Estado global com Zustand
+│   ├── store/              # Global state with Zustand
 │   │   ├── authStore.ts
 │   │   └── mentorStore.ts
-│   └── theme/              # Configuração de temas
+│   └── theme/              # Theme configuration
 │       ├── theme.ts
 │       └── ThemeProvider.tsx
-├── assets/                 # Recursos estáticos
-├── babel.config.js         # Configuração do Babel
-├── app.json                # Configuração do Expo
-├── tsconfig.json           # Configuração do TypeScript
-└── package.json            # Dependências e scripts
+├── assets/                 # Static resources
+├── babel.config.js         # Babel configuration
+├── app.json                # Expo configuration
+├── tsconfig.json           # TypeScript configuration
+└── package.json            # Dependencies and scripts
 ```
 
-## Funcionalidades
+## Features
 
-- **Autenticação Completa**: Login, cadastro e recuperação de senha
-- **Chat com Mentor IA**: Interface de chat interativa com o mentor virtual
-- **Persistência de Conversas**: Histórico de conversas salvo no Firestore
-- **Tema Personalizável**: Suporte a temas claro e escuro, com opção para seguir o sistema
-- **Perfil de Usuário**: Gestão de perfil e preferências
-- **Animações Fluidas**: Transições e animações suaves em toda a aplicação
+- **Complete Authentication**: Login, registration, and password recovery
+- **Chat with AI Mentor**: Interactive chat interface with the virtual mentor
+- **Conversation Persistence**: Conversation history saved in Firestore
+- **Customizable Theme**: Support for light and dark themes, with option to follow system settings
+- **User Profile**: Profile and preferences management
+- **Fluid Animations**: Smooth transitions and animations throughout the application
 
-## Iniciando o Projeto
+## Getting Started
 
-1. Clone o repositório
-2. Instale as dependências: `npm install`
-3. Configure suas credenciais do Firebase em `src/services/firebase.ts`
-4. Configure sua chave da API OpenAI em `src/services/openai.ts`
-5. Inicie o projeto: `npm start`
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Configure your Firebase credentials in `src/services/firebase.ts`
+4. Configure your OpenAI API key in `src/services/openai.ts`
+5. Start the project: `npm start`
 
-## Requisitos
+## Requirements
 
-- Node.js 18 ou superior
-- Expo CLI instalado globalmente: `npm install -g expo-cli`
-- Conta no Firebase (para autenticação e Firestore)
-- Chave de API da OpenAI 
+- Node.js 18 or higher
+- Expo CLI installed globally: `npm install -g expo-cli`
+- Firebase account (for authentication and Firestore)
+- OpenAI API key 
