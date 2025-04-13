@@ -30,7 +30,6 @@ RosebydAI/
 │   │   ├── index.tsx
 │   │   └── conversation.tsx
 │   └── profile.tsx         # Profile page
-├── src/
 │   ├── components/         # Reusable components
 │   │   ├── Button.tsx
 │   │   ├── Screen.tsx
